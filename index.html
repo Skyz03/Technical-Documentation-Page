@@ -18,19 +18,19 @@
 
         <header>JS Documentation</header>
         <ul>
-            <li><a href="#">Introduction</a></li>
-            <li><a href="#">What you should already know</a></li>
-            <li><a href="#">JavaScript & Java</a></li>
-            <li><a href="#">Hello World</a></li>
-            <li><a href="#">Variables</a></li>
-            <li><a href="#">Declaring Variables</a></li>
-            <li><a href="#">Variable Scope </a></li>
-            <li><a href="#">Global Variables</a></li>
-            <li><a href="#">Constants</a></li>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+            <li><a class="nav-link" href="#JavaScript_&_Java">JavaScript & Java</a></li>
+            <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Declaring_variables">Declaring Variables</a></li>
+            <li><a class="nav-link" href="#Variable_scope">Variable Scope </a></li>
+            <li><a class="nav-link" href="#More_info">More Info</a></li>
+            <!-- <li><a href="#">Constants</a></li>
             <li><a href="#">Data Types</a></li>
             <li><a href="#">if...else Statement</a></li>
             <li><a href="#">while Statement</a></li>
-            <li><a href="#">Function Declarations </a></li>
+            <li><a href="#">Function Declarations </a></li> -->
         </ul>
     </nav>
 
@@ -109,7 +109,7 @@
             </article>
         </section>
 
-        <section id="Hello_World">
+        <section id="Hello_World" class="main-section">
             <header>Hello World</header>
             <article>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world"
                 JavaScript code:
@@ -121,7 +121,7 @@
             </article>
         </section>
 
-        <section id="Variables">
+        <section id="Variables" class="main-section">
             <header>Variables</header>
             <article>
                 <p>You use variables as symbolic names for values in your application. The names of variables, called
@@ -167,9 +167,47 @@
             </article>
         </section>
 
+        <section id="Variable_scope" class="main-section">
+            <header>Variable scope</header>
+            <article>
+                <p>When you declare a variable outside of any function, it is called a global variable, because it is
+                    available to any
+                    other code in the current document. When you declare a variable within a function, it is called a
+                    local variable,
+                    because it is available only within that function.</p>
+
+                <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared
+                    within a block is
+                    local to the function (or global scope) that the block resides within. For example the following
+                    code will log 5,
+                    because the scope of x is the function (or global context) within which x is declared, not the
+                    block, which in this case
+                    is an if statement.</p>
+
+                <code>if (true) { var x = 5; } console.log(x); // 5</code>
+
+                <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
+
+                <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+                defined</code>
+            </article>
+        </section>
+
+        <section id="More_info" class="main-section">
+            <header>More Info</header>
+            <article>
+                <ul>
+                    <li>For more information please visit <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN
+                            DOCS</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
     </main>
 
-    <script src="" async defer></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async defer></script>
 </body>
 
 </html>

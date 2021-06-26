@@ -86,3 +86,22 @@ code {
   margin: 10px;
   border-radius: 5px;
 }
+
+@media (max-width: 640px) {
+  #navbar {
+    position: absolute;
+    min-width: 290px;
+    top: 0px;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+  }
+  #main-doc {
+    position: relative;
+    margin-top: 270px;
+    margin-left: 0;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+}
