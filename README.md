@@ -9,3 +9,10 @@ This site is similar to a documentation of site which includes section such as:
   3) Independent ```article``` section
   
 ScreenShot
+![image](https://user-images.githubusercontent.com/42742924/123547729-a4c41900-d781-11eb-829f-b4057b63306c.png)
+
+### Things learned: 
+Use of ```header``` and ```article``` elements together. 
+
+### Future Development
+For future develpoment JS can be added in this site plus can make it more modern style.
